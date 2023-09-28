@@ -9,7 +9,7 @@ export default async function Home() {
   //mock
   return (
     <>
-      <nav className="items-start fixed flex max-w-full  flex-col pl-4 max-md:max-w-full bg-white border-b-2 border-b-slate-100 z-50">
+      <nav className="items-start fixed flex max-w-full  flex-col pl-4 max-md:max-w-full bg-gray-50 dark:bg-gray-800 border-b-[0.5px] border-b-slate-100 dark:border-b-gray-700 z-50">
         <div className="justify-center items-center z-[1] flex flex-col self-stretch pl-2.5 pr-5 py-3 max-md:max-w-full">
           <div className="flex max-w-full w-[1611px] flex-row items-start justify-between gap-5 max-md:flex-wrap max-md:justify-center max-md:max-w-full">
             <div className="justify-center items-start flex flex-row self-center gap-5 min-w-[300px] pr-5">
@@ -50,7 +50,7 @@ export default async function Home() {
 
 
 
-      <div className=" justify-center items-center bg-white flex flex-col self-stretch w-full px-4">
+      <div className=" justify-center items-center bg-gray-50 dark:bg-gray-800 flex flex-col self-stretch w-full px-4">
         <div className="flex max-w-full flex-col self-center">
           <div className="items-center justify-center flex max-w-full flex-col h-screen">
             <div className="max-w-full">

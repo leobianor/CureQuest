@@ -14,7 +14,7 @@ export default function Login() {
     function login(e) {
         e.preventDefault()
         if (email === "leobianor@outlook.com" && senha === "123") {
-            push("/home")
+            push("/dashboard/home")
         } else {
             toast.error("Credenciais Invalidas", {
                 style: {
@@ -51,7 +51,7 @@ export default function Login() {
                                     id="email"
                                     type="email"
                                     autoComplete="email"
-                                    className="block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 dark:text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    className="block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                     value={email}
                                     onChange={e => setEmail(e.target.value)}
                                 />
@@ -74,7 +74,7 @@ export default function Login() {
                                     id="senha"
                                     type="password"
                                     autoComplete="current-password"
-                                    className="block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 dark:text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    className="block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                     value={senha}
                                     onChange={e => setSenha(e.target.value)}
 

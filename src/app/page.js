@@ -22,14 +22,14 @@ export default async function Home() {
                   src={logo}
                   alt="logo"
                 />
-                Sanofi MedConnect
+                Cure Quest
               </a>
             </div>
             <div className="justify-between items-start flex max-w-full w-[659px] flex-row self-center gap-5 min-w-[300px] mt-0.5 pr-5 max-md:flex-wrap max-md:justify-center max-md:max-w-full">
             </div>
             <div className="justify-between items-start flex max-w-full w-[226px] flex-row self-center gap-5 min-w-[203px] pr-5 max-md:justify-center">
               <a
-                href="..."
+                href="/login"
                 className="text-neutral-500 font-normal text-base min-w-[41px] mt-1"
               >
                 Login
@@ -62,7 +62,7 @@ export default async function Home() {
                     >
                       <h1 className="text-black">Bem-vindos ao </h1>
                       <h1 className="text-purple-900">
-                        Sanofi MedConnect
+                        Sanofi Cure Quest
                       </h1>
                       <span
                         className="text-black font-medium text-xl mt-4 "

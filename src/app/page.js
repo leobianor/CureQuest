@@ -2,6 +2,7 @@ import Titulo from "@/components/Titulo"
 import Image from "next/image"
 import logo from "@/images/logo.png"
 import personagem_inicio from "@/images/personagem_inicio.png"
+import 'flowbite';
 
 
 
@@ -9,43 +10,27 @@ export default async function Home() {
   //mock
   return (
     <>
-      <nav className="items-start fixed flex max-w-full  flex-col pl-4 max-md:max-w-full bg-gray-50 dark:bg-gray-800 border-b-[0.5px] border-b-slate-100 dark:border-b-gray-700 z-50">
-        <div className="justify-center items-center z-[1] flex flex-col self-stretch pl-2.5 pr-5 py-3 max-md:max-w-full">
-          <div className="flex max-w-full w-[1611px] flex-row items-start justify-between gap-5 max-md:flex-wrap max-md:justify-center max-md:max-w-full">
-            <div className="justify-center items-start flex flex-row self-center gap-5 min-w-[300px] pr-5">
-              <a
-                href="#"
-                className="flex text-black font-semibold text-3xl grow shrink-0 basis-auto self-center text-center -mt-px"
-              >
-                <Image
-                  className="aspect-auto object-contain object-center w-[39px] max-w-full self-center"
-                  src={logo}
-                  alt="logo"
-                />
-                Cure Quest
-              </a>
-            </div>
-            <div className="justify-between items-start flex max-w-full w-[659px] flex-row self-center gap-5 min-w-[300px] mt-0.5 pr-5 max-md:flex-wrap max-md:justify-center max-md:max-w-full">
-            </div>
-            <div className="justify-between items-start flex max-w-full w-[226px] flex-row self-center gap-5 min-w-[203px] pr-5 max-md:justify-center">
-              <a
-                href="/login"
-                className="text-neutral-500 font-normal text-base min-w-[41px] mt-1"
-              >
-                Login
-              </a>
-              <a
-                href="..."
-                builder-id="builder-6951353784116829"
-                className="text-neutral-500 font-normal text-base self-center text-center min-w-[82px]"
-              >
-                Cadastrar
-              </a>
 
-            </div>
+      <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="/" className="flex ml-2 md:mr-24">
+            <Image
+              src={logo}
+              className="w-8 h-8 mr-3"
+              alt="Cure Quest Logo" />
+            <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap text-gray-900 dark:text-white">Cure Quest</span>
+          </a>
+          <div class="flex md:order-2">
+            <a href="/login" type="button" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Login</a>
+            <a href="/cadastro" type="button" class="text-gray-900 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 ">Cadastrar</a>
+             
           </div>
+    
         </div>
       </nav>
+
+
+
 
 
 

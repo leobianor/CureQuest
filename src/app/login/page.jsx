@@ -1,14 +1,16 @@
 "use client"
 
-import Image from "next/image";
-import logo from "@/images/logo.png";
-import { useState } from "react";
-import { useRouter } from "next/navigation";
-import toast from "react-hot-toast";
+import Image from "next/image"
+import logo from "@/images/logo.png"
+import { useState } from "react"
+import { useRouter } from "next/navigation"
+import toast, { Toaster } from "react-hot-toast";
+import { serverLogin } from "@/actions/auth"
 
 export default function Login() {
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
+    const [credenciaisInvalidas, setCredenciaisInvalidas] = useState(false);
     const { push } = useRouter();
 
     function login(e) {
@@ -32,6 +34,8 @@ export default function Login() {
                     color: "#FFF",
                 },
             });
+            // Define credenciaisInvalidas como true para limpar os campos de entrada
+            setCredenciaisInvalidas(true);
         }
     }
 
@@ -61,9 +65,13 @@ export default function Login() {
                                     id="email"
                                     type="email"
                                     autoComplete="email"
-                                    className="block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                    value={email}
-                                    onChange={e => setEmail(e.target.value)}
+                                    className={`block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 ${credenciaisInvalidas ? "ring-red-500" : "" // Adicione um anel vermelho quando as credenciais forem inválidas
+                                        }`}
+                                    value={credenciaisInvalidas ? "" : email} // Limpe o valor do campo se as credenciais forem inválidas
+                                    onChange={(e) => {
+                                        setEmail(e.target.value);
+                                        setCredenciaisInvalidas(false); // Defina como false ao digitar novamente
+                                    }}
                                 />
                             </div>
                         </div>
@@ -85,10 +93,13 @@ export default function Login() {
                                     id="senha"
                                     type="password"
                                     autoComplete="current-password"
-                                    className="block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                    value={senha}
-                                    onChange={e => setSenha(e.target.value)}
-
+                                    className={`block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 ${credenciaisInvalidas ? "ring-red-500" : ""
+                                        }`}
+                                    value={credenciaisInvalidas ? "" : senha}
+                                    onChange={(e) => {
+                                        setSenha(e.target.value);
+                                        setCredenciaisInvalidas(false);
+                                    }}
                                 />
                             </div>
                         </div>
@@ -111,7 +122,7 @@ export default function Login() {
                     </p>
                 </div>
             </div>
+            <Toaster />
         </div>
     )
 }
-

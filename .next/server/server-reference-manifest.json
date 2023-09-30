@@ -1,29 +1,4 @@
 {
-  "node": {
-    "81acde8104d1ddfdaf4b7bda295bcb711843d075": {
-      "workers": {
-        "app/login/page": "(actionBrowser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cleobi%5C%5CCureQuest%5C%5Csrc%5C%5Cactions%5C%5Cauth.js%22%2C%5B%22serverLogin%22%2C%22serverLogout%22%5D%5D%5D&__client_imported__=true!",
-        "app/dashboard/home/page": "(actionBrowser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cleobi%5C%5CCureQuest%5C%5Csrc%5C%5Cactions%5C%5Cauth.js%22%2C%5B%22serverLogin%22%2C%22serverLogout%22%5D%5D%5D&__client_imported__=true!",
-        "app/dashboard/doencas/page": "(actionBrowser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cleobi%5C%5CCureQuest%5C%5Csrc%5C%5Cactions%5C%5Cauth.js%22%2C%5B%22serverLogin%22%2C%22serverLogout%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/login/page": "actionBrowser",
-        "app/dashboard/home/page": "actionBrowser",
-        "app/dashboard/doencas/page": "actionBrowser"
-      }
-    },
-    "ea7e69239678677c2493b481d89b6d95e7d58a3e": {
-      "workers": {
-        "app/login/page": "(actionBrowser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cleobi%5C%5CCureQuest%5C%5Csrc%5C%5Cactions%5C%5Cauth.js%22%2C%5B%22serverLogin%22%2C%22serverLogout%22%5D%5D%5D&__client_imported__=true!",
-        "app/dashboard/home/page": "(actionBrowser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cleobi%5C%5CCureQuest%5C%5Csrc%5C%5Cactions%5C%5Cauth.js%22%2C%5B%22serverLogin%22%2C%22serverLogout%22%5D%5D%5D&__client_imported__=true!",
-        "app/dashboard/doencas/page": "(actionBrowser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cleobi%5C%5CCureQuest%5C%5Csrc%5C%5Cactions%5C%5Cauth.js%22%2C%5B%22serverLogin%22%2C%22serverLogout%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/login/page": "actionBrowser",
-        "app/dashboard/home/page": "actionBrowser",
-        "app/dashboard/doencas/page": "actionBrowser"
-      }
-    }
-  },
+  "node": {},
   "edge": {}
 }

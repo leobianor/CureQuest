@@ -1,6 +1,5 @@
 "use client"
 
-import Titulo from "@/components/Titulo"
 import 'flowbite';
 import NavbarDashboard from "@/components/NavbarDashbord";
 

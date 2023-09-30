@@ -1,27 +1,37 @@
 "use client"
 
-import Image from "next/image"
-import logo from "@/images/logo.png"
-import { useState } from "react"
+import Image from "next/image";
+import logo from "@/images/logo.png";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 
 export default function Login() {
-    const [email, setEmail] = useState("")
-    const [senha, setSenha] = useState("")
-    const { push } = useRouter()
+    const [email, setEmail] = useState("");
+    const [senha, setSenha] = useState("");
+    const { push } = useRouter();
 
     function login(e) {
-        e.preventDefault()
-        if (email === "leobianor@outlook.com" && senha === "123") {
-            push("/dashboard/home")
+        e.preventDefault();
+
+        // Recupere os usuários cadastrados do localStorage
+        const existingUsers = JSON.parse(localStorage.getItem("users")) || [];
+        const user = existingUsers.find(
+            (user) => user.email === email && user.password === senha
+        );
+
+        if (user) {
+            toast.success("Login bem-sucedido!");
+            serverLogin()
+            // Redirecione para a página de dashboard/home após o login
+            push("/dashboard/home");
         } else {
-            toast.error("Credenciais Invalidas", {
+            toast.error("Credenciais Inválidas", {
                 style: {
-                    backgroundColor: '#333',
-                    color: '#FFF'
-                }
-            })
+                    backgroundColor: "#333",
+                    color: "#FFF",
+                },
+            });
         }
     }
 
@@ -63,6 +73,7 @@ export default function Login() {
                                 <label htmlFor="senha" className="block text-sm font-medium leading-6 text-gray-900 dark:text-white">
                                     Senha
                                 </label>
+
                                 <div className="text-sm">
                                     <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
                                         Esqueceu a senha?
@@ -94,7 +105,7 @@ export default function Login() {
 
                     <p className="mt-8 text-center text-sm text-gray-900 dark:text-white">
                         Não faz parte ainda?{' '}
-                        <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+                        <a href="/cadastro" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
                             Cadastre-se agora!
                         </a>
                     </p>

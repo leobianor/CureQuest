@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Medicamento</title>
+    <style>
+        .slider-container {
+            display: flex;
+            align-items: center;
+        }
+
+        #barra {
+            flex-grow: 1;
+        }
+
+        #valorBarra {
+            margin-left: 10px; /* Espaçamento entre a barra e o valor */
+        }
+
+        /* Estilo personalizado para o switch */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .switch input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        .switch input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        .switch input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+    </style>
+</head>
+<body>
+    <p>Dose para tratamento do tromboembolismo venoso com ou sem embolia pulmonar</p>
+    <div>
+        <p>Resultado: Enoxaparina <span id="resultado">61</span></p>
+    </div>
+    <div class="slider-container">
+        <input type="range" id="barra" min="41" max="99" value="41" oninput="mostrarValorBarra(); calcularHoras()">
+        <span id="valorBarra">41</span>
+    </div>
+    
+    <label for="modoToggle">24h</label>
+    <label class="switch">
+        <input type="checkbox" id="modoToggle" onchange="ajustarBarra(); calcularHoras()">
+        <span class="slider"></span>
+    </label>
+    <label for="modoToggle">12h</label>
+
+    <script>
+        function mostrarValorBarra() {
+            const barra = document.getElementById("barra");
+            const valorBarra = document.getElementById("valorBarra");
+            valorBarra.textContent = barra.value;
+        }
+
+        function ajustarBarra() {
+            const barra = document.getElementById("barra");
+            const modo12h = document.getElementById("modoToggle").checked;
+
+            if (modo12h) {
+                // Se o modo de 12 horas for selecionado, ajuste os limites da barra.
+                barra.min = 41;
+                barra.max = 149;
+                if (barra.value > 149) {
+                    barra.value = 149;
+                }
+            } else {
+                // Se o modo de 24 horas for selecionado, ajuste os limites da barra de volta.
+                barra.min = 41;
+                barra.max = 99;
+                if (barra.value > 99) {
+                    barra.value = 99;
+                }
+            }
+
+            mostrarValorBarra();
+        }
+
+        function calcularHoras() {
+            const barraValor = parseInt(document.getElementById("barra").value);
+            const modo12h = document.getElementById("modoToggle").checked;
+
+            let multiplicador = 1.5;
+            if (modo12h) {
+                multiplicador = 1;
+            }
+
+            const resultado = Math.floor(barraValor * multiplicador);
+            document.getElementById("resultado").textContent = resultado;
+        }
+    </script>
+</body>
+</html>

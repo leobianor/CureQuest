@@ -1,4 +1,4 @@
-// File: C:\Users\leobi\CureQuest\src\app\layout.js
+// File: C:\Users\leobi\CureQuest-2\src\app\layout.js
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

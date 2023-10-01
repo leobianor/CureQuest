@@ -42,7 +42,6 @@ export default function Home() {
                     </div>
                     <div id="myTabContent">
                         <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800 " id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            
                             <CalculadoraMedicamento />
                         </div>
                         <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">

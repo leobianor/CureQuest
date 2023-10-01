@@ -30,9 +30,7 @@ const MedicationCalculator = () => {
         const result = Math.floor(sliderValue * multiplier);
         return result;
     };
-    const sliderStyle = {
-        backgroundImage: `linear-gradient(to right, #2196F3 0%, #2196F3 ${(sliderValue / 149) * 100}%, #ccc ${(sliderValue / 149) * 100}%, #ccc 100%)`,
-    };
+    
 
     return (
         <div className='flex flex-col items-center bg-white rounded-xl p-5 text-gray-900 dark:text-white shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)]'>
@@ -42,25 +40,32 @@ const MedicationCalculator = () => {
                 <span id="resultado">{calculateHours()} mg de Enoxaparina</span>
 
             </div>
-            <div className="relative">
+            <div className="relative mt-5">
                 <input
                     type="range"
                     className="w-full h-7 rounded-full bg-gray-200 p-1 appearance-none cursor-pointer dark:bg-gray-700"
                     min="41"
                     max={is12HourMode ? '149' : '99'}
-                    step="0.5"
+                    step="1"
                     value={sliderValue}
                     onChange={handleSliderChange}
-                    style={sliderStyle}
+                    
                 />
                 <span
                     className="absolute left-1/2 transform -translate-x-1/2 -mt-8"
-                    style={{
-                        left: `${(sliderValue / 149) * 100}%`,
-                    }}
+                    
                 >
-                    {sliderValue}
+                    <input
+                    type="number"
+                    className="w-16 text-center border rounded ml-2"
+                    min="41"
+                    max={is12HourMode ? '149' : '99'}
+                    step="1"
+                    value={sliderValue}
+                    onChange={(event) => setSliderValue(parseFloat(event.target.value))}
+                />
                 </span>
+                
             </div>
 
 

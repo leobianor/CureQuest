@@ -1,96 +1,87 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 
-function MedicationCalculator() {
-    const [barValue, setBarValue] = useState(41);
-    const [mode12h, setMode12h] = useState(false);
+const MedicationCalculator = () => {
+    const [sliderValue, setSliderValue] = useState(41);
+    const [is12HourMode, setIs12HourMode] = useState(false);
 
-    const handleBarChange = (e) => {
-        setBarValue(parseInt(e.target.value));
-        calcularHoras(e.target.value, mode12h);
+    const handleSliderChange = (event) => {
+        setSliderValue(parseInt(event.target.value, 10));
     };
 
-    const handleModeToggle = () => {
-        setMode12h(!mode12h);
-        ajustarBarra(barValue, !mode12h);
-        calcularHoras(barValue, !mode12h);
+    const select24HourMode = () => {
+        setIs12HourMode(false);
     };
 
-    const mostrarValorBarra = (value) => {
-        return (
-            <div className="slider-container flex items-center">
-                <input
-                    type="range"
-                    id="barra"
-                    min="41"
-                    max={mode12h ? "149" : "99"}
-                    value={barValue}
-                    onChange={handleBarChange}
-                    className="flex-grow"
-                />
-                <span id="valorBarra" className="ml-4">
-                    {value}
-                </span>
-            </div>
-        );
+    const select12HourMode = () => {
+        setIs12HourMode(true);
     };
 
-    const ajustarBarra = (value, modo12h) => {
-        const barra = document.getElementById("barra");
+    useEffect(() => {
+        const adjustedSliderValue = is12HourMode ? Math.min(sliderValue, 149) : Math.min(sliderValue, 99);
+        setSliderValue(adjustedSliderValue);
+    }, [is12HourMode, sliderValue]);
 
-        if (modo12h) {
-            // Se o modo de 12 horas for selecionado, ajuste os limites da barra.
-            barra.min = "41";
-            barra.max = "149";
-            if (value > 149) {
-                setBarValue(149);
-                barra.value = 149;
-            }
-        } else {
-            // Se o modo de 24 horas for selecionado, ajuste os limites da barra de volta.
-            barra.min = "41";
-            barra.max = "99";
-            if (value > 99) {
-                setBarValue(99);
-                barra.value = 99;
-            }
-        }
+    useEffect(() => {
+        calculateHours();
+    }, [sliderValue, is12HourMode]);
+
+    const calculateHours = () => {
+        const multiplier = is12HourMode ? 1 : 1.5;
+        const result = Math.floor(sliderValue * multiplier);
+        return result;
     };
-
-    const calcularHoras = (value, modo12h) => {
-        let multiplicador = 1.5;
-        if (modo12h) {
-            multiplicador = 1;
-        }
-
-        const resultado = Math.floor(value * multiplicador);
-        document.getElementById("resultado").textContent = resultado;
+    const sliderStyle = {
+        backgroundImage: `linear-gradient(to right, #2196F3 0%, #2196F3 ${(sliderValue / 149) * 100}%, #ccc ${(sliderValue / 149) * 100}%, #ccc 100%)`,
     };
 
     return (
-        <div className="bg-gray-50 dark:bg-gray-800 min-h-screen p-8">
-            <p className="text-lg font-semibold mb-4">
-                Dose para tratamento do tromboembolismo venoso com ou sem embolia
-                pulmonar
-            </p>
-            <div className="mb-4">
-                <p>
-                    Resultado: Enoxaparina <span id="resultado">61</span>
-                </p>
+        <div className='flex flex-col items-center bg-white rounded-xl p-5 text-gray-900 dark:text-white shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)]'>
+            <h1 className='text-2xl text-center font-semibold uppercase'>Dose para tratamento do tromboembolismo venoso com ou sem embolia pulmonar</h1>
+
+            <div className='mt-5 bg-orange-500 p-6 rounded-lg text-white'>
+                <span id="resultado">{calculateHours()} mg de Enoxaparina</span>
+
             </div>
-            {mostrarValorBarra(barValue)}
-            <label className="inline-block mr-4">24h</label>
-            <label className="switch">
+            <div className="relative">
                 <input
-                    type="checkbox"
-                    id="modoToggle"
-                    onChange={handleModeToggle}
-                    checked={mode12h}
+                    type="range"
+                    className="w-full h-7 rounded-full bg-gray-200 p-1 appearance-none cursor-pointer dark:bg-gray-700"
+                    min="41"
+                    max={is12HourMode ? '149' : '99'}
+                    step="0.5"
+                    value={sliderValue}
+                    onChange={handleSliderChange}
+                    style={sliderStyle}
                 />
-                <span className="slider"></span>
-            </label>
-            <label className="inline-block ml-4">12h</label>
+                <span
+                    className="absolute left-1/2 transform -translate-x-1/2 -mt-8"
+                    style={{
+                        left: `${(sliderValue / 149) * 100}%`,
+                    }}
+                >
+                    {sliderValue}
+                </span>
+            </div>
+
+
+            <div className="flex mt-5">
+                <button
+                    className={`flex-grow border rounded p-2 ${!is12HourMode ? 'bg-blue-500 text-white' : 'border-blue-500'
+                        }`}
+                    onClick={select24HourMode}
+                >
+                    24h
+                </button>
+                <button
+                    className={`flex-grow border rounded p-2 ${is12HourMode ? 'bg-blue-500 text-white' : 'border-blue-500'
+                        }`}
+                    onClick={select12HourMode}
+                >
+                    12h
+                </button>
+            </div>
         </div>
     );
-}
+};
 
 export default MedicationCalculator;

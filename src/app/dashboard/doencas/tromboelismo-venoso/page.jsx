@@ -5,7 +5,7 @@ import CalculadoraMedicamento from "@/components/calculoDose"
 import Navbar from "@/components/navbar"
 import Sidebar from "@/components/sidevar"
 import 'flowbite'
-import EscorePacCirugico from "@/components/escorePacCirugico"
+import EscorePacCirurgico from "@/components/escorePacCirurgico"
 
 
 
@@ -42,7 +42,7 @@ export default function Home() {
                             <CalculadoraMedicamento />
                         </div>
                         <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-                            <EscorePacCirugico />
+                            <EscorePacCirurgico />
                         </div>
                         <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
                             <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>

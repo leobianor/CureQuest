@@ -43,7 +43,7 @@ const MedicationCalculator = () => {
             <div className="flex mt-5 justify-center items-center">
                 <input
                     type="range"
-                    className="w-full h-7 rounded-full bg-gray-200 p-1 appearance-none cursor-pointer dark:bg-gray-700"
+                    className="accent-purple-500 w-full h-7 rounded-full bg-gray-200 p-1 appearance-none cursor-pointer dark:bg-gray-700"
                     min="41"
                     max={is12HourMode ? '149' : '99'}
                     step="1"
@@ -56,7 +56,7 @@ const MedicationCalculator = () => {
 
                 <input
                     type="number"
-                    className="w-16 rounded-full text-center border ml-2"
+                    className="accent-purple-500 w-16 rounded-full text-center border ml-2"
                     min="41"
                     max={is12HourMode ? '149' : '99'}
                     step="1"

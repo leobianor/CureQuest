@@ -1136,6 +1136,18 @@ input:checked + .toggle-bg {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.mx-20 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
 .-mb-px {
   margin-bottom: -1px;
 }
@@ -1210,6 +1222,9 @@ input:checked + .toggle-bg {
 }
 .mt-px {
   margin-top: 1px;
+}
+.mt-1 {
+  margin-top: 0.25rem;
 }
 .line-clamp-1 {
   overflow: hidden;
@@ -1336,6 +1351,12 @@ input:checked + .toggle-bg {
 }
 .w-full {
   width: 100%;
+}
+.w-48 {
+  width: 12rem;
+}
+.w-52 {
+  width: 13rem;
 }
 .max-w-\[293px\] {
   max-width: 293px;
@@ -1485,6 +1506,18 @@ input:checked + .toggle-bg {
 .gap-5 {
   gap: 1.25rem;
 }
+.gap-7 {
+  gap: 1.75rem;
+}
+.gap-8 {
+  gap: 2rem;
+}
+.gap-6 {
+  gap: 1.5rem;
+}
+.gap-3 {
+  gap: 0.75rem;
+}
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1515,8 +1548,17 @@ input:checked + .toggle-bg {
 .self-stretch {
   align-self: stretch;
 }
+.overflow-auto {
+  overflow: auto;
+}
 .overflow-hidden {
   overflow: hidden;
+}
+.overflow-scroll {
+  overflow: scroll;
+}
+.overflow-x-auto {
+  overflow-x: auto;
 }
 .overflow-y-auto {
   overflow-y: auto;
@@ -1550,6 +1592,9 @@ input:checked + .toggle-bg {
 .rounded-xl {
   border-radius: 0.75rem;
 }
+.rounded-2xl {
+  border-radius: 1rem;
+}
 .rounded-l-lg {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -1579,6 +1624,9 @@ input:checked + .toggle-bg {
 }
 .border-r {
   border-right-width: 1px;
+}
+.border-none {
+  border-style: none;
 }
 .border-blue-500 {
   --tw-border-opacity: 1;
@@ -1618,6 +1666,10 @@ input:checked + .toggle-bg {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.border-purple-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(144 97 249 / var(--tw-border-opacity));
 }
 .bg-blue-500 {
   --tw-bg-opacity: 1;
@@ -1790,6 +1842,10 @@ input:checked + .toggle-bg {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -1804,6 +1860,9 @@ input:checked + .toggle-bg {
 }
 .pt-\[24px\] {
   padding-top: 24px;
+}
+.pl-3 {
+  padding-left: 0.75rem;
 }
 .text-center {
   text-align: center;
@@ -1984,6 +2043,15 @@ input:checked + .toggle-bg {
 }
 .outline {
   outline-style: solid;
+}
+.outline-offset-2 {
+  outline-offset: 2px;
+}
+.outline-purple-600 {
+  outline-color: #7E3AF2;
+}
+.outline-purple-800 {
+  outline-color: #5521B5;
 }
 .ring-1 {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
@@ -2294,6 +2362,10 @@ body {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.hover\:outline-purple-800:hover {
+  outline-color: #5521B5;
+}
+
 .hover\:before\:left-0:hover::before {
   content: var(--tw-content);
   left: 0px;
@@ -2354,6 +2426,11 @@ body {
 .focus\:ring-purple-300:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(202 191 253 / var(--tw-ring-opacity));
+}
+
+.focus\:ring-blue-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(63 131 248 / var(--tw-ring-opacity));
 }
 
 .focus-visible\:outline:focus-visible {
@@ -2453,6 +2530,11 @@ body {
   border-color: transparent;
 }
 
+:is(.dark .dark\:border-gray-500) {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
+
 :is(.dark .dark\:bg-blue-600) {
   --tw-bg-opacity: 1;
   background-color: rgb(28 100 242 / var(--tw-bg-opacity));
@@ -2516,6 +2598,10 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+:is(.dark .dark\:ring-offset-gray-700) {
+  --tw-ring-offset-color: #374151;
+}
+
 :is(.dark .dark\:hover\:bg-blue-700:hover) {
   --tw-bg-opacity: 1;
   background-color: rgb(26 86 219 / var(--tw-bg-opacity));
@@ -2574,6 +2660,15 @@ body {
 :is(.dark .dark\:focus\:ring-purple-800:focus) {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(85 33 181 / var(--tw-ring-opacity));
+}
+
+:is(.dark .dark\:focus\:ring-blue-600:focus) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(28 100 242 / var(--tw-ring-opacity));
+}
+
+:is(.dark .dark\:focus\:ring-offset-gray-700:focus) {
+  --tw-ring-offset-color: #374151;
 }
 
 :is(.dark .group:hover .dark\:group-hover\:text-white) {
@@ -2738,6 +2833,10 @@ body {
 
   .md\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .md\:overflow-scroll {
+    overflow: scroll;
   }
 
   .md\:rounded-none {

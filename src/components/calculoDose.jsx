@@ -30,17 +30,17 @@ const MedicationCalculator = () => {
         const result = Math.floor(sliderValue * multiplier);
         return result;
     };
-    
+
 
     return (
-        <div className='flex flex-col items-center bg-white rounded-xl p-5 text-gray-900 dark:text-white shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)]'>
-            <h1 className='text-2xl text-center font-semibold uppercase'>Dose para tratamento do tromboembolismo venoso com ou sem embolia pulmonar</h1>
+        <div className="flex flex-col items-center bg-white rounded-xl p-5 text-gray-900 dark:text-white shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)]">
+            <h1 className="text-2xl text-center font-semibold uppercase">Dose para tratamento do tromboembolismo venoso com ou sem embolia pulmonar</h1>
 
             <div className='mt-5 bg-orange-500 p-6 rounded-lg text-white'>
                 <span id="resultado">{calculateHours()} mg de Enoxaparina</span>
 
             </div>
-            <div className="relative mt-5">
+            <div className="flex mt-5 justify-center items-center">
                 <input
                     type="range"
                     className="w-full h-7 rounded-full bg-gray-200 p-1 appearance-none cursor-pointer dark:bg-gray-700"
@@ -49,36 +49,33 @@ const MedicationCalculator = () => {
                     step="1"
                     value={sliderValue}
                     onChange={handleSliderChange}
-                    
+
                 />
-                <span
-                    className="absolute left-1/2 transform -translate-x-1/2 -mt-8"
-                    
-                >
-                    <input
+                <span className="absolute left-1/2 transform -translate-x-1/2 -mt-8">
+                </span>
+
+                <input
                     type="number"
-                    className="w-16 text-center border rounded ml-2"
+                    className="w-16 rounded-full text-center border ml-2"
                     min="41"
                     max={is12HourMode ? '149' : '99'}
                     step="1"
                     value={sliderValue}
                     onChange={(event) => setSliderValue(parseFloat(event.target.value))}
                 />
-                </span>
-                
             </div>
 
 
-            <div className="flex mt-5">
+            <div className="flex mt-5 gap-3">
                 <button
-                    className={`flex-grow border rounded p-2 ${!is12HourMode ? 'bg-blue-500 text-white' : 'border-blue-500'
+                    className={`flex-grow border rounded p-2 ${!is12HourMode ? 'bg-purple-500 text-white' : 'border-purple-500'
                         }`}
                     onClick={select24HourMode}
                 >
                     24h
                 </button>
                 <button
-                    className={`flex-grow border rounded p-2 ${is12HourMode ? 'bg-blue-500 text-white' : 'border-blue-500'
+                    className={`flex-grow border rounded p-2 ${is12HourMode ? 'bg-purple-500 text-white' : 'border-purple-500'
                         }`}
                     onClick={select12HourMode}
                 >

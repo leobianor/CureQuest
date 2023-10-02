@@ -2708,6 +2708,42 @@ body {
   color: rgb(63 131 248 / var(--tw-text-opacity));
 }
 
+@media not all and (min-width: 1024px) {
+
+  .max-lg\:items-center {
+    align-items: center;
+  }
+
+  .max-lg\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .max-lg\:py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .max-lg\:text-center {
+    text-align: center;
+  }
+
+  .max-lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .max-lg\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .max-lg\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
 @media not all and (min-width: 768px) {
 
   .max-md\:ml-\[10px\] {

@@ -18,10 +18,10 @@ export default async function Home() {
               src={logo}
               className="w-8 h-8 mr-3"
               alt="Cure Quest Logo" />
-            <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap text-gray-900 dark:text-white">Cure Quest</span>
+            <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap text-gray-900 dark:text-white max-lg:text-sm">Cure Quest</span>
           </a>
           <div class="flex md:order-2">
-            <a href="/login" type="button" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Login</a>
+            <a href="/login" type="button" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center  mr-3 md:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Login</a>
             <a href="/cadastro" type="button" class="text-gray-900 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 ">Cadastrar</a>
           </div>
 
@@ -34,7 +34,7 @@ export default async function Home() {
 
 
 
-      <div className=" justify-center items-center bg-gray-50 dark:bg-gray-800 flex flex-col self-stretch w-full px-4">
+      <div className=" justify-center items-center bg-gray-50 dark:bg-gray-800 flex flex-col self-stretch w-full px-4 max-lg:text-center">
         <div className="flex max-w-full flex-col self-center">
           <div className="items-center justify-center flex max-w-full flex-col h-screen">
             <div className="max-w-full">
@@ -42,7 +42,7 @@ export default async function Home() {
                 <div className="flex flex-col justify-center ">
                   <div className="justify-center items-start flex flex-col mt-12 max-md:max-w-full max-md:mt-12">
                     <div
-                      className="text-purple-900 font-extrabold text-4xl mr-10 max-md:text-3xl max-md:max-w-full"
+                      className=" font-extrabold text-4xl mr-10 max-md:text-3xl max-md:max-w-full"
                     >
                       <h1 className="text-black">Bem-vindos ao </h1>
                       <h1 className="text-purple-900">
@@ -55,8 +55,8 @@ export default async function Home() {
                       </span>
                     </div>
                   </div>
-                  <div className="flex items-start mt-4">
-                    <a href="/login" class="items-start max-w-full w-[300px] self-center py-4 px-8 text-white text-3xl font-medium rounded-[50px] 
+                  <div className="flex items-start max-lg:items-center mt-4">
+                    <a href="/login" class=" max-w-full w-[300px] self-center py-4 px-8 text-white text-3xl font-medium rounded-[50px] 
                   overflow-hidden bg-purple-900 transition-all duration-400 ease-in-out shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)] 
                   hover:scale-105 hover:text-black hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full 
                   before:w-full before:h-full before:bg-gradient-to-r before:from-purple-200 before:to-purple-100 

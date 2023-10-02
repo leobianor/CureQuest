@@ -11,13 +11,13 @@ const EscorePacCirurgico = () => {
 
     const getCardColor = () => {
         if (score === 0) {
-            return 'blue';
+            return '#0000CD';
         } else if (score >= 1 && score <= 2) {
-            return 'yellow';
+            return '#EEB600';
         } else if (score >= 3 && score <= 4) {
-            return 'orange';
+            return '#FF4500';
         } else {
-            return 'red';
+            return '#A20202';
         }
     };
 

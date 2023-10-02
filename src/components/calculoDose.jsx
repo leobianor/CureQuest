@@ -41,9 +41,10 @@ const MedicationCalculator = () => {
 
             </div>
             <div className="flex mt-5 justify-center items-center">
+
                 <input
                     type="range"
-                    className="accent-purple-500 w-full h-7 rounded-full bg-gray-200 p-1 appearance-none cursor-pointer dark:bg-gray-700"
+                    className="accent-purple-700 w-full rounded-full bg-gray-200 cursor-pointer dark:bg-gray-700"
                     min="41"
                     max={is12HourMode ? '149' : '99'}
                     step="1"
@@ -51,18 +52,23 @@ const MedicationCalculator = () => {
                     onChange={handleSliderChange}
 
                 />
-                <span className="absolute left-1/2 transform -translate-x-1/2 -mt-8">
-                </span>
-
-                <input
-                    type="number"
-                    className="accent-purple-500 w-16 rounded-full text-center border ml-2"
-                    min="41"
-                    max={is12HourMode ? '149' : '99'}
-                    step="1"
-                    value={sliderValue}
-                    onChange={(event) => setSliderValue(parseFloat(event.target.value))}
-                />
+                <div class="relative ml-2">
+                    <input
+                        type="number"
+                        id="floating_outlined"
+                        class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer"
+                        min="41"
+                        max={is12HourMode ? '149' : '99'}
+                        step="1"
+                        value={sliderValue}
+                        onChange={(event) => setSliderValue(parseFloat(event.target.value))}
+                    />
+                    <label
+                        for="floating_outlined"
+                        class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">
+                        Kg
+                    </label>
+                </div>
             </div>
 
 

@@ -11,9 +11,9 @@ const EscorePacClinico = () => {
 
     const getCardColor = () => {
         if (score < 4) {
-            return 'blue';
+            return '#0000CD';
         } else {
-            return 'red';
+            return '#A20202';
         }
     };
 

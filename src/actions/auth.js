@@ -11,3 +11,5 @@ export async function serverLogin(email) {
 export async function serverLogout() {
     cookies().delete("user_email");
 }
+
+

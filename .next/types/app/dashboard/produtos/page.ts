@@ -1,4 +1,4 @@
-// File: C:\Users\leobi\CureQuest-2\src\app\dashboard\produtos\page.jsx
+// File: C:\Users\leobi\CureQuest-3\src\app\dashboard\produtos\page.jsx
 import * as entry from '../../../../../src/app/dashboard/produtos/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -4,11 +4,15 @@ import Titulo from "@/components/Titulo"
 import Navbar from "@/components/navbar";
 import Sidebar from "@/components/sidevar";
 
+
 import 'flowbite';
 
 
 
 export default function Home() {
+
+    
+
 
     //mock
     return (
@@ -24,7 +28,7 @@ export default function Home() {
                             Olá{" "}
                         </span>
                         <span className="font-bold text-purple-700">
-                            Dr. Márcio
+                            Dr. Fernandes
                         </span>
                         <span>
                             , bem-vindo de novo!

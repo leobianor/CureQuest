@@ -46,6 +46,7 @@ export default function SignUp() {
 
         if (isUserExists) {
             toast.error("Usuário já cadastrado!");
+            window.location.href = "/login";
             return;
         }
 
@@ -64,7 +65,7 @@ export default function SignUp() {
 
     return (
         <div className="bg-gray-50 dark:bg-gray-800 h-screen">
-            <div className="flex h-full flex-1 flex-col justify-center px-10 py-14">
+            <div className="flex h-full flex-1 flex-col justify-center px-40 py-14 2xl:px-[600px] xl:px-96">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <Image
                         className="mx-auto h-14 w-auto object-cover"

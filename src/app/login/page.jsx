@@ -82,11 +82,7 @@ export default function Login() {
                                     Senha
                                 </label>
 
-                                <div className="text-sm">
-                                    <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
-                                        Esqueceu a senha?
-                                    </a>
-                                </div>
+                                
                             </div>
                             <div className="mt-2">
                                 <input

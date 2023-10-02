@@ -34,9 +34,9 @@ export default async function Home() {
 
 
 
-      <div className=" justify-center items-center bg-gray-50 dark:bg-gray-800 flex flex-col self-stretch w-full px-4 max-lg:text-center">
+      <div className=" justify-center items-center bg-gray-50 dark:bg-gray-800 flex flex-col self-stretch w-full px-4 max-lg:text-center pt-6">
         <div className="flex max-w-full flex-col self-center">
-          <div className="items-center justify-center flex max-w-full flex-col h-screen">
+          <div className="items-center justify-center flex max-w-full flex-col h-screen min">
             <div className="max-w-full">
               <div className=" justify-center gap-10 flex max-md:flex-col ">
                 <div className="flex flex-col justify-center ">
@@ -96,7 +96,7 @@ export default async function Home() {
                         <div class="flex flex-col sm:flex-row items-center">
                           <div class="flex justify-start w-full mx-auto items-center">
                             <div class="w-full sm:w-1/2 sm:pr-8">
-                              <div class="p-4 bg-white rounded shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)]">
+                              <div class="p-4 bg-white rounded shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)] text-center">
                                 <h3 class="font-semibold text-lg mb-1">Comunicação em Tempo Real</h3>
                                 <p class="leading-tight text-justify">
                                   Converse instantaneamente com representantes da Sanofi para
@@ -117,7 +117,7 @@ export default async function Home() {
                         <div class="flex flex-col sm:flex-row items-center">
                           <div class="flex justify-end w-full mx-auto items-center">
                             <div class="w-full sm:w-1/2 sm:pl-8">
-                              <div class="p-4 bg-white rounded shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)]">
+                              <div class="p-4 bg-white rounded shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)] text-center">
                                 <h3 class="font-semibold text-lg mb-1">Acesso a Informações Atualizadas</h3>
                                 <p class="leading-tight text-justify">
                                   Fique por dentro de produtos, tratamentos e estudos clínicos
@@ -133,19 +133,20 @@ export default async function Home() {
                       </div>
 
 
-                      <div class="mt-6 sm:mt-0 sm:mb-12">
+                      <div class="mt-6 mb-6 sm:mt-0 sm:mb-12">
                         <div class="flex flex-col sm:flex-row items-center">
                           <div class="flex justify-start w-full mx-auto items-center">
                             <div class="w-full sm:w-1/2 sm:pr-8">
-                              <div class="p-4 bg-white rounded shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)]">
-                                And I'd like to take a minute, just sit right there,
+                              <div class="p-4 bg-white rounded shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)] text-center">
+                                <h3 class="font-semibold text-lg mb-1 ">Uma plataforma simples e aconchegante</h3>
+                                <p class="leading-tight ">
+                                  Tenha tudo em um click, seja no seu computador ou na palma da sua mão
+                                </p>
                               </div>
                             </div>
                           </div>
                           <div class="rounded-full bg-purple-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                           </div>
                         </div>
                       </div>
@@ -157,6 +158,39 @@ export default async function Home() {
           </div>
         </div>
       </div>
+
+
+      <footer class="dark:bg-white  shadow bg-gray-900">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0">
+              <Image
+                src={logo}
+                className="w-8 h-8 mr-3"
+                alt="Cure Quest Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Cure Quest</span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+              <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+              </li>
+              <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">Licensing</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="" class="hover:underline">Grupo GNZ™</a>. All Rights Reserved.</span>
+        </div>
+      </footer>
+
+
 
 
     </>

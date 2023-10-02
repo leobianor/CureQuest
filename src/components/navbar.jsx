@@ -46,20 +46,18 @@ export default function Navbar(users) {
                             <div>
                                 <button type="button" className="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
                                     <span className="sr-only">Open user menu</span>
-                                    <Image
-                                        src={logo}
-                                        className="w-8 h-8 rounded-full"
-                                        alt="user photo"
-                                    />
+                                    <div class="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                                        <span class="font-medium text-gray-600 dark:text-gray-300">LB</span>
+                                    </div>
                                 </button>
                             </div>
                             <div className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600" id="dropdown-user">
                                 <div className="px-4 py-3" role="none">
                                     <p className="text-sm text-gray-900 dark:text-white" role="none">
-                                        
+
                                     </p>
                                     <p className="text-sm font-medium text-gray-900 truncate dark:text-gray-300" role="none">
-                                        
+
                                     </p>
                                 </div>
                                 <ul className="py-1" role="none">

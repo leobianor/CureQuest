@@ -22,7 +22,7 @@ const EscorePacCirurgico = () => {
     };
 
     return (
-        <div className="flex flex-col bg-white rounded-xl p-5 text-gray-900 dark:text-white shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)] overflow-auto max-md:p5">
+        <div className="flex flex-col  p-5 text-gray-900 dark:text-white overflow-auto max-md:p5">
             <h2 className="text-2xl text-center font-semibold uppercase">Escore de Avaliação de Risco de Paciente Cirúrgico</h2>
             <div className="flex flex-col items-center">
                 <div className="max-w-md text-justify my-5 p-5 rounded-2xl text-white" style={{ backgroundColor: getCardColor()}}>
@@ -35,9 +35,9 @@ const EscorePacCirurgico = () => {
                     {score >= 5 && 'Alto risco - Profilaxia farmacológica + profilaxia mecânica (CPI ou meias antirombo). Pacientes de alto risco submetidos à cirurgia oncológica abdominal e pélvica: estender a profilaxia por 4 semanas'}
                 </div>
             </div>
-            <h3 class="mb-4 font-semibold text-gray-900 dark:text-white">Selecione os fatores de risco:</h3>
+            <h3 class="mb-4 font-semibold justify-center items-center text-gray-900 dark:text-white">Selecione os fatores de risco:</h3>
             <div className="flex gap-8 justify-center flex-wrap">
-                <ul class="">
+                <ul>
                     <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
                         <div class="flex items-center pl-3">
                             <input

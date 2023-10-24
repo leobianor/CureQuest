@@ -1,4 +1,4 @@
-// File: C:\Users\leobi\CureQuest-3\src\app\dashboard\doencas\tromboelismo-venoso\page.jsx
+// File: C:\Users\leobi\CureQuest\src\app\dashboard\doencas\tromboelismo-venoso\page.jsx
 import * as entry from '../../../../../../src/app/dashboard/doencas/tromboelismo-venoso/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -1,6 +1,5 @@
 {
   "/page": "app/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/login/page": "app/login/page.js",
   "/dashboard/home/page": "app/dashboard/home/page.js",
   "/dashboard/doencas/tromboelismo-venoso/page": "app/dashboard/doencas/tromboelismo-venoso/page.js"

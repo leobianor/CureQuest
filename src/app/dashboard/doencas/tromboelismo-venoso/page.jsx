@@ -44,6 +44,7 @@ export default function Home() {
                             content={<EscorePacObstetrica />}
                             id={3}
                         />
+
                         <ModalComponent
                             title="Pacientes Especiais"
                             content={<PacEspeciais />}
@@ -53,11 +54,12 @@ export default function Home() {
 
 
 
-                        <CalculadoraMedicamento />
 
                     </div>
+                    <CalculadoraMedicamento />
                 </div>
             </div>
+
         </>
     )
 }

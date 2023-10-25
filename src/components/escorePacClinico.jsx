@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import CheckboxItem from '@/components/CheckboxItem'
+
 
 const EscorePacClinico = () => {
     const [score, setScore] = useState(0);
@@ -17,11 +19,9 @@ const EscorePacClinico = () => {
         }
     };
 
-    const resetScore = () => {
-        setScore(0);
-    };
 
     return (
+
         <div className="flex flex-col rounded-xl p-5 text-gray-900 dark:text-white overflow-auto max-md:p5">
             <h2 className="text-2xl text-center font-semibold uppercase">Escore de Avaliação de Risco de Paciente Cirúrgico</h2>
             <div className="flex flex-col items-center">
@@ -36,170 +36,18 @@ const EscorePacClinico = () => {
             <h3 class="mb-4 font-semibold text-gray-900 dark:text-white justify-center">Selecione os fatores de risco:</h3>
             <div className="flex gap-8 justify-center flex-wrap">
                 <ul>
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input
-                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-                                type="checkbox"
-                                value={3}
-                                onChange={handleCheckboxChange}
-                            />
-                            <label for="vue-checkbox" class="w-full py-3 mx-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                Câncer em atividade
-                            </label>
-                        </div>
-                    </li>
-
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input
-                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-                                type="checkbox"
-                                value={3}
-                                onChange={handleCheckboxChange}
-                            />
-                            <label for="vue-checkbox" class="w-full py-3 mx-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                História prévia de TEV (excluindo trombose venosa superficial)
-                            </label>
-                        </div>
-                    </li>
-
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input
-                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-                                type="checkbox"
-                                value={3}
-                                onChange={handleCheckboxChange}
-                            />
-                            <label for="vue-checkbox" class="w-full py-3 mx-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                Mobilidade reduzida
-                            </label>
-                        </div>
-                    </li>
-
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input
-                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-                                type="checkbox"
-                                value={3}
-                                onChange={handleCheckboxChange}
-                            />
-                            <label for="vue-checkbox" class="w-full py-3 mx-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                Trombofilia conhecida
-                            </label>
-                        </div>
-                    </li>
-
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input
-                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-                                type="checkbox"
-                                value={2}
-                                onChange={handleCheckboxChange}
-                            />
-                            <label for="vue-checkbox" class="w-full py-3 mx-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                Trauma ou cirurgia recente (último mês)
-                            </label>
-                        </div>
-                    </li>
-
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input
-                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-                                type="checkbox"
-                                value={1}
-                                onChange={handleCheckboxChange}
-                            />
-                            <label for="vue-checkbox" class="w-full py-3 mx-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                Idade avançada (Mais de 70 anos)
-                            </label>
-                        </div>
-                    </li>
-
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input
-                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-                                type="checkbox"
-                                value={1}
-                                onChange={handleCheckboxChange}
-                            />
-                            <label for="vue-checkbox" class="w-full py-3 mx-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                Insuficiência cardíaca e/ou respiratória
-                            </label>
-                        </div>
-                    </li>
-
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input
-                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-                                type="checkbox"
-                                value={1}
-                                onChange={handleCheckboxChange}
-                            />
-                            <label for="vue-checkbox" class="w-full py-3 mx-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                Infecções e/ou doenças reumatológicas
-                            </label>
-                        </div>
-                    </li>
-
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input
-                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-                                type="checkbox"
-                                value={1}
-                                onChange={handleCheckboxChange}
-                            />
-                            <label for="vue-checkbox" class="w-full py-3 mx-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                Infarto agudo do miocárdio ou acidente vascular cerebral
-                            </label>
-                        </div>
-                    </li>
-
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input
-                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-                                type="checkbox"
-                                value={1}
-                                onChange={handleCheckboxChange}
-                            />
-                            <label for="vue-checkbox" class="w-full py-3 mx-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                Obesidade (IMC&gt;30)
-                            </label>
-                        </div>
-                    </li>
-
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input
-                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-                                type="checkbox"
-                                value={1}
-                                onChange={handleCheckboxChange}
-                            />
-                            <label for="vue-checkbox" class="w-full py-3 mx-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                Terapia hormonal atual
-                            </label>
-                        </div>
-                    </li>
-
-
+                    <CheckboxItem label="Câncer em atividade" value={3} onChange={handleCheckboxChange} />
+                    <CheckboxItem label="História prévia de TEV (excluindo trombose venosa superficial)" value={3} onChange={handleCheckboxChange} />
+                    <CheckboxItem label="Mobilidade reduzida" value={3} onChange={handleCheckboxChange} />
+                    <CheckboxItem label="Trombofilia conhecida" value={3} onChange={handleCheckboxChange} />
+                    <CheckboxItem label="Trauma ou cirurgia recente (último mês)" value={3} onChange={handleCheckboxChange} />
+                    <CheckboxItem label="Idade avançada (Mais de 70 anos)" value={1} onChange={handleCheckboxChange} />
+                    <CheckboxItem label="Insuficiência cardíaca e/ou respiratória" value={1} onChange={handleCheckboxChange} />
+                    <CheckboxItem label="Infecções e/ou doenças reumatológicas" value={1} onChange={handleCheckboxChange} />
+                    <CheckboxItem label="Infarto agudo do miocárdio ou acidente vascular cerebral" value={1} onChange={handleCheckboxChange} />
+                    <CheckboxItem label="Obesidade (IMC > 30)" value={1} onChange={handleCheckboxChange} />
+                    <CheckboxItem label="Terapia hormonal atual" value={1} onChange={handleCheckboxChange} />
                 </ul>
-
-
-
-
-
-
-
-
             </div>
         </div>
     );

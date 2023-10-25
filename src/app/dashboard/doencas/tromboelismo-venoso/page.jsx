@@ -8,6 +8,7 @@ import EscorePacCirurgico from "@/components/escorePacCirurgico"
 import EscorePacClinico from "@/components/escorePacClinico"
 import EscorePacObstetrica from "@/components/EscorePacObstetrica"
 import ModalComponent from "@/components/botaoModal"
+import PacEspeciais from "@/components/PacEspeciais"
 
 
 
@@ -29,6 +30,7 @@ export default function Home() {
                             title="Profilaxia TEV em Pacientes Cirúgicos"
                             content={<EscorePacCirurgico />}
                             id={1}
+
                         />
 
                         <ModalComponent
@@ -42,13 +44,20 @@ export default function Home() {
                             content={<EscorePacObstetrica />}
                             id={3}
                         />
+                        <ModalComponent
+                            title="Pacientes Especiais"
+                            content={<PacEspeciais />}
+                            id={4}
+                        />
+
+
+
+
+                        <CalculadoraMedicamento />
+
                     </div>
-
-                    <CalculadoraMedicamento />
-
                 </div>
             </div>
-
         </>
     )
 }

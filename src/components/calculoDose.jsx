@@ -34,7 +34,7 @@ const MedicationCalculator = () => {
 
     return (
         <div className="flex flex-col items-center bg-white rounded-xl p-5 text-gray-900 dark:text-white shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)]">
-            <h1 className="text-2xl text-center font-semibold uppercase">Dose para tratamento do tromboembolismo venoso com ou sem embolia pulmonar</h1>
+            <h1 className="text-2xl text-center font-semibold">Dose para tratamento do tromboembolismo venoso com ou sem embolia pulmonar</h1>
 
             <div className='mt-5 bg-orange-500 p-6 rounded-lg text-white'>
                 <span id="resultado">{calculateHours()} mg de Enoxaparina</span>

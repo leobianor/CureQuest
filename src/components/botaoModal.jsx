@@ -14,7 +14,7 @@ export default function ModalComponent({ title, content, id }) {
     };
 
     return (
-        <div className="mb-4">
+        <div className="">
             <div className="flex gap-2">
 
 

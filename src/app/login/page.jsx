@@ -23,7 +23,14 @@ export default function Login() {
         );
 
         if (user) {
-            toast.success("Login bem-sucedido!");
+            toast.success("Login bem-sucedido!", {
+                style: {
+                    backgroundColor: "#333",
+                    color: "#FFF",
+                },
+            }
+            
+            );
             serverLogin()
             // Redirecione para a página de dashboard/home após o login
             push("/dashboard/home");
@@ -103,7 +110,7 @@ export default function Login() {
                         <div>
                             <button
                                 type="submit"
-                                className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                className="flex w-full justify-center rounded-md bg-purple-700 hover:bg-purple-800 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600"
                             >
                                 Login
                             </button>
@@ -112,7 +119,7 @@ export default function Login() {
 
                     <p className="mt-8 text-center text-sm text-gray-900 dark:text-white">
                         Não faz parte ainda?{' '}
-                        <a href="/cadastro" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+                        <a href="/cadastro" className="font-semibold leading-6 text-purple-700 hover:text-purple-800">
                             Cadastre-se agora!
                         </a>
                     </p>

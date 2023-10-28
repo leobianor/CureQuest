@@ -21,7 +21,7 @@ export default async function Home() {
             <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap text-gray-900 dark:text-white max-lg:text-sm">Cure Quest</span>
           </a>
           <div class="flex md:order-2">
-            <a href="/login" type="button" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center  mr-3 md:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Login</a>
+            <a href="/login" type="button" class="text-white bg-purple-800 hover:bg-purple-600 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center  mr-3 md:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Login</a>
             <a href="/cadastro" type="button" class="text-gray-900 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 ">Cadastrar</a>
           </div>
 
@@ -40,10 +40,8 @@ export default async function Home() {
             <div className="max-w-full">
               <div className=" justify-center gap-10 flex max-md:flex-col ">
                 <div className="flex flex-col justify-center ">
-                  <div className="justify-center items-start flex flex-col mt-12 max-md:max-w-full max-md:mt-12">
-                    <div
-                      className=" font-extrabold text-4xl mr-10 max-md:text-3xl max-md:max-w-full"
-                    >
+                  <div className="justify-center max-xl:items-center items-start flex flex-col mt-12 max-md:max-w-full max-md:mt-12">
+                    <div className=" font-extrabold text-4xl max-xl:mr-0 mr-10 max-md:text-3xl max-md:max-w-full">
                       <h1 className="text-black">Bem-vindos ao </h1>
                       <h1 className="text-purple-900">
                         Sanofi Cure Quest
@@ -55,23 +53,24 @@ export default async function Home() {
                       </span>
                     </div>
                   </div>
-                  <div className="flex items-start max-lg:items-center mt-4">
-                    <a href="/login" class=" max-w-full w-[300px] self-center py-4 px-8 text-white text-3xl font-medium rounded-[50px] 
-                  overflow-hidden bg-purple-900 transition-all duration-400 ease-in-out shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)] 
-                  hover:scale-105 hover:text-black hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full 
-                  before:w-full before:h-full before:bg-gradient-to-r before:from-purple-200 before:to-purple-100 
-                  before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-[50px] 
-                  hover:before:left-0  text-center cursor-pointer">
-                      Acesse &gt;&gt;
+                  <div className="flex items-start max-lg:justify-center mt-4">
+                    <a href="/login" class="custom-button">
+                      <span>ACESSE</span>
+                      <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="37" cy="37" r="35.5" stroke="white" stroke-width="3"></circle>
+                        <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="white"></path>
+                      </svg>
                     </a>
-
                   </div>
 
 
+
+
+
                 </div>
-                <div className="flex flex-col items-center leading-[normal] w-[30%]">
+                <div className="flex flex-col items-center justify-center leading-[normal] w-[30%] max-sm:hidden">
                   <Image
-                    className=" object-cover items-center"
+                    className=" object-cover items-center justify-center"
                     src={personagem_inicio}
                     alt="logo"
                   />
@@ -146,7 +145,7 @@ export default async function Home() {
                             </div>
                           </div>
                           <div class="rounded-full bg-purple-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></svg>
                           </div>
                         </div>
                       </div>

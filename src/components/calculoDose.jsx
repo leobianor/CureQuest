@@ -59,7 +59,7 @@ const MedicationCalculator = () => {
                     <p className='text-center text-3xl font-semibold mt-2' id="resultado">{calculateHours()} mg</p>
                 </div>
             </div>
-            <div className="flex mt-8 pl-4 justify-center items-center border rounded-full border-gray-300 appearance-none dark:text-white dark-border-gray-600 dark-focus-border-purple-500 focus-outline-none focus-ring-0 focus-border-purple-600 peer">
+            <div className="flex mt-8 pl-4 justify-center items-center border-2 rounded-full border-purple-500 appearance-none dark:text-white dark-border-gray-600 dark-focus-border-purple-500 focus-outline-none focus-ring-0 focus-border-purple-600 peer">
                 <input
                     type="range"
                     className="accent-purple-700 w-full rounded-full bg-gray-200  cursor-pointer dark-bg-gray-700"
@@ -82,7 +82,7 @@ const MedicationCalculator = () => {
                     />
                     <label
                         htmlFor="floating_outlined"
-                        className="absolute text-sm text-gray-500 dark-text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark-bg-gray-900 px-2 peer-focus-px-2 peer-focus-text-purple-600 peer-focus-dark-text-purple-500 peer-placeholder-shown-scale-100 peer-placeholder-shown--translate-y-1/2 peer-placeholder-shown-top-1/2 peer-focus-top-2 peer-focus-scale-75 peer-focus--translate-y-4 left-3"
+                        className="absolute text-sm text-purple-500 dark-text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark-bg-gray-900 px-2 peer-focus-px-2 peer-focus-text-purple-600 peer-focus-dark-text-purple-500 peer-placeholder-shown-scale-100 peer-placeholder-shown--translate-y-1/2 peer-placeholder-shown-top-1/2 peer-focus-top-2 peer-focus-scale-75 peer-focus--translate-y-4 left-3"
                     >
                         Kg
                     </label>

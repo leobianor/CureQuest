@@ -19,7 +19,7 @@ export default function ModalComponent({ title, content, id }) {
 
 
                 <div class="block space-y-4 md:flex md:space-y-0 md:space-x-4">
-                    <button data-modal-target={id} data-modal-toggle={id} class="block w-full md:w-auto text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                    <button data-modal-target={id} data-modal-toggle={id} class="block w-full md:w-auto text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800" type="button">
                         {title}
                     </button>
                 </div>
@@ -50,11 +50,11 @@ export default function ModalComponent({ title, content, id }) {
                             <div className="p-6 space-y-6">{content}</div>
 
                             <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                                <button data-modal-hide={id} type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Finalizar</button>
+                                <button data-modal-hide={id} type="button" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Finalizar</button>
                             </div>
                         </div>
                         <button
-                            class="fixed mr-2 bottom-4 right-4 bg-blue-700 text-white hover:bg-blue-800 rounded-full w-10 h-10 flex items-center justify-center focus:ring-4 focus:outline-none focus:ring-blue-300"
+                            class="fixed mr-2 bottom-4 right-4 bg-purple-700 text-white hover:bg-purple-800 rounded-full w-10 h-10 flex items-center justify-center focus:ring-4 focus:outline-none focus:ring-purple-300"
                             onClick={() => scrollToTop(id)}
                         >
                             <svg

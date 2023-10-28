@@ -87,26 +87,26 @@ function RenalCalculator() {
                         type="number"
                         value={idade}
                         onChange={(e) => setIdade(e.target.value)}
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500"
                     />
                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Creatinina (mg/dl):</label>
                     <input
                         type="number"
                         value={creatinina}
                         onChange={(e) => setCreatinina(e.target.value)}
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500"
                     />
                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sexo:</label>
                     <div className="space-x-4">
                         <button
                             onClick={() => setSexo("Homem")}
-                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${sexo === "Homem" ? "bg-blue-500 text-white" : "bg-gray-200"}`}
+                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${sexo === "Homem" ? "bg-purple-500 text-white" : "bg-gray-200"}`}
                         >
                             Homem
                         </button>
                         <button
                             onClick={() => setSexo("Mulher")}
-                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${sexo === "Mulher" ? "bg-blue-500 text-white" : "bg-gray-200"}`}
+                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${sexo === "Mulher" ? "bg-purple-500 text-white" : "bg-gray-200"}`}
                         >
                             Mulher
                         </button>
@@ -115,13 +115,13 @@ function RenalCalculator() {
                     <div className="space-x-4">
                         <button
                             onClick={() => setRaca(true)}
-                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${raca ? "bg-blue-500 text-white" : "bg-gray-200"}`}
+                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${raca ? "bg-purple-500 text-white" : "bg-gray-200"}`}
                         >
                             Sim
                         </button>
                         <button
                             onClick={() => setRaca(false)}
-                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${!raca ? "bg-blue-500 text-white" : "bg-gray-200"}`}
+                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${!raca ? "bg-purple-500 text-white" : "bg-gray-200"}`}
                         >
                             Não
                         </button>
@@ -144,26 +144,26 @@ function RenalCalculator() {
                         type="number"
                         value={idade}
                         onChange={(e) => setIdade(e.target.value)}
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500"
                     />
                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Creatinina (mg/dl):</label>
                     <input
                         type="number"
                         value={creatinina}
                         onChange={(e) => setCreatinina(e.target.value)}
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500"
                     />
                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sexo:</label>
                     <div className="space-x-4">
                         <button
                             onClick={() => setSexo("Homem")}
-                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${sexo === "Homem" ? "bg-blue-500 text-white" : "bg-gray-200"}`}
+                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${sexo === "Homem" ? "bg-purple-500 text-white" : "bg-gray-200"}`}
                         >
                             Homem
                         </button>
                         <button
                             onClick={() => setSexo("Mulher")}
-                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${sexo === "Mulher" ? "bg-blue-500 text-white" : "bg-gray-200"}`}
+                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${sexo === "Mulher" ? "bg-purple-500 text-white" : "bg-gray-200"}`}
                         >
                             Mulher
                         </button>
@@ -172,13 +172,13 @@ function RenalCalculator() {
                     <div className="space-x-4">
                         <button
                             onClick={() => setRaca(true)}
-                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${raca ? "bg-blue-500 text-white" : "bg-gray-200"}`}
+                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${raca ? "bg-purple-500 text-white" : "bg-gray-200"}`}
                         >
                             Sim
                         </button>
                         <button
                             onClick={() => setRaca(false)}
-                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${!raca ? "bg-blue-500 text-white" : "bg-gray-200"}`}
+                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${!raca ? "bg-purple-500 text-white" : "bg-gray-200"}`}
                         >
                             Não
                         </button>
@@ -201,26 +201,26 @@ function RenalCalculator() {
                         type="number"
                         value={idade}
                         onChange={(e) => setIdade(e.target.value)}
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500"
                     />
                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Creatinina (mg/dl):</label>
                     <input
                         type="number"
                         value={creatinina}
                         onChange={(e) => setCreatinina(e.target.value)}
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500"
                     />
                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sexo:</label>
                     <div className="space-x-4">
                         <button
                             onClick={() => setSexo("Homem")}
-                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${sexo === "Homem" ? "bg-blue-500 text-white" : "bg-gray-200"}`}
+                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${sexo === "Homem" ? "bg-purple-500 text-white" : "bg-gray-200"}`}
                         >
                             Homem
                         </button>
                         <button
                             onClick={() => setSexo("Mulher")}
-                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${sexo === "Mulher" ? "bg-blue-500 text-white" : "bg-gray-200"}`}
+                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${sexo === "Mulher" ? "bg-purple-500 text-white" : "bg-gray-200"}`}
                         >
                             Mulher
                         </button>
@@ -229,13 +229,13 @@ function RenalCalculator() {
                     <div className="space-x-4">
                         <button
                             onClick={() => setRaca(true)}
-                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${raca ? "bg-blue-500 text-white" : "bg-gray-200"}`}
+                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${raca ? "bg-purple-500 text-white" : "bg-gray-200"}`}
                         >
                             Sim
                         </button>
                         <button
                             onClick={() => setRaca(false)}
-                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${!raca ? "bg-blue-500 text-white" : "bg-gray-200"}`}
+                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${!raca ? "bg-purple-500 text-white" : "bg-gray-200"}`}
                         >
                             Não
                         </button>
@@ -258,33 +258,33 @@ function RenalCalculator() {
                         type="number"
                         value={idade}
                         onChange={(e) => setIdade(e.target.value)}
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500"
                     />
                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Peso (kg):</label>
                     <input
                         type="number"
                         value={peso}
                         onChange={(e) => setPeso(e.target.value)}
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500"
                     />
                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Creatinina (mg/dl):</label>
                     <input
                         type="number"
                         value={creatinina}
                         onChange={(e) => setCreatinina(e.target.value)}
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500"
                     />
                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sexo:</label>
                     <div className="space-x-4">
                         <button
                             onClick={() => setSexo("Homem")}
-                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${sexo === "Homem" ? "bg-blue-500 text-white" : "bg-gray-200"}`}
+                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${sexo === "Homem" ? "bg-purple-500 text-white" : "bg-gray-200"}`}
                         >
                             Homem
                         </button>
                         <button
                             onClick={() => setSexo("Mulher")}
-                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${sexo === "Mulher" ? "bg-blue-500 text-white" : "bg-gray-200"}`}
+                            className={`py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 rounded-full ${sexo === "Mulher" ? "bg-purple-500 text-white" : "bg-gray-200"}`}
                         >
                             Mulher
                         </button>

@@ -2,7 +2,7 @@
 
 import Titulo from "@/components/Titulo"
 import Navbar from "@/components/navbar"
-import Sidebar from "@/components/sidevar"
+import Sidebar from "@/components/sidebar"
 import Image from "next/image"
 import TromboembolismoVenoso from "@/images/TromboembolismoVenoso.png"
 

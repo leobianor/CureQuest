@@ -1,5 +1,7 @@
 {
+  "/page": "app/page.js",
   "/login/page": "app/login/page.js",
   "/dashboard/home/page": "app/dashboard/home/page.js",
+  "/dashboard/doencas/page": "app/dashboard/doencas/page.js",
   "/dashboard/doencas/tromboelismo-venoso/page": "app/dashboard/doencas/tromboelismo-venoso/page.js"
 }

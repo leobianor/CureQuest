@@ -12,6 +12,7 @@ import ModalComponent from "@/components/botaoModal"
 import TratamentoTEV from "@/components/tratamentoTEV"
 import Oncologia from "@/components/oncologia"
 import Cardiologia from "@/components/cardiologia"
+import CalcFuncaoRenal from "@/components/calcFuncaoRenal"
 
 
 
@@ -81,6 +82,7 @@ export default function Home() {
 
                     </div>
                     <CalculadoraMedicamento />
+                    <CalcFuncaoRenal />
                 </div>
             </div>
 

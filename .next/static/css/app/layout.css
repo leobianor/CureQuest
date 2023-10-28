@@ -1116,6 +1116,15 @@ input:checked + .toggle-bg {
 .top-3 {
   top: 0.75rem;
 }
+.left-2 {
+  left: 0.5rem;
+}
+.left-3 {
+  left: 0.75rem;
+}
+.left-4 {
+  left: 1rem;
+}
 .-z-10 {
   z-index: -10;
 }
@@ -1207,6 +1216,14 @@ input:checked + .toggle-bg {
 .my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
+}
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .mb-1 {
   margin-bottom: 0.25rem;
@@ -1701,6 +1718,10 @@ input:checked + .toggle-bg {
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
 }
+.rounded-s-full {
+  border-start-start-radius: 9999px;
+  border-end-start-radius: 9999px;
+}
 .rounded-se-xl {
   border-start-end-radius: 0.75rem;
 }
@@ -1716,6 +1737,9 @@ input:checked + .toggle-bg {
 .border-4 {
   border-width: 4px;
 }
+.border-2 {
+  border-width: 2px;
+}
 .border-b {
   border-bottom-width: 1px;
 }
@@ -1730,6 +1754,9 @@ input:checked + .toggle-bg {
 }
 .border-b-4 {
   border-bottom-width: 4px;
+}
+.border-b-8 {
+  border-bottom-width: 8px;
 }
 .border-blue-600 {
   --tw-border-opacity: 1;
@@ -1766,6 +1793,10 @@ input:checked + .toggle-bg {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.border-slate-950 {
+  --tw-border-opacity: 1;
+  border-color: rgb(2 6 23 / var(--tw-border-opacity));
 }
 .border-b-\[1\] {
   border-bottom-color: 1;
@@ -1900,6 +1931,9 @@ input:checked + .toggle-bg {
 .p-10 {
   padding: 2.5rem;
 }
+.p-8 {
+  padding: 2rem;
+}
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -2000,6 +2034,18 @@ input:checked + .toggle-bg {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -2032,6 +2078,9 @@ input:checked + .toggle-bg {
 }
 .pt-\[24px\] {
   padding-top: 24px;
+}
+.pl-4 {
+  padding-left: 1rem;
 }
 .text-left {
   text-align: left;

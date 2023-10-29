@@ -1,4 +1,4 @@
-import Titulo from "@/components/Titulo"
+
 import Image from "next/image"
 import logo from "@/images/logo.png"
 import personagem_inicio from "@/images/personagem_inicio.png"
@@ -18,11 +18,11 @@ export default async function Home() {
               src={logo}
               className="w-8 h-8 mr-3"
               alt="Cure Quest Logo" />
-            <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap text-gray-900 dark:text-white max-lg:text-sm">Cure Quest</span>
+            <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap text-gray-900 dark:text-gray-100 max-lg:text-sm">Cure Quest</span>
           </a>
           <div class="flex md:order-2">
             <a href="/login" type="button" class="text-white bg-purple-800 hover:bg-purple-600 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center  mr-3 md:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Login</a>
-            <a href="/cadastro" type="button" class="text-gray-900 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 ">Cadastrar</a>
+            <a href="/cadastro" type="button" class="text-gray-900 dark:text-gray-100 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 ">Cadastrar</a>
           </div>
 
         </div>
@@ -42,12 +42,12 @@ export default async function Home() {
                 <div className="flex flex-col justify-center ">
                   <div className="justify-center max-xl:items-center items-start flex flex-col mt-12 max-md:max-w-full max-md:mt-12">
                     <div className=" font-extrabold text-4xl max-xl:mr-0 mr-10 max-md:text-3xl max-md:max-w-full">
-                      <h1 className="text-black">Bem-vindos ao </h1>
+                      <h1 className="text-gray-900 dark:text-gray-100">Bem-vindos ao </h1>
                       <h1 className="text-purple-900">
                         Sanofi Cure Quest
                       </h1>
                       <span
-                        className="text-black font-medium text-xl mt-4 "
+                        className="text-gray-900 dark:text-gray-100 font-medium text-xl mt-4 "
                       >
                         Simplificando a Comunicação entre Profissionais de Saúde e Sanofi
                       </span>
@@ -55,7 +55,7 @@ export default async function Home() {
                   </div>
                   <div className="flex items-start max-lg:justify-center mt-4">
                     <a href="/login" class="custom-button">
-                      <span>ACESSE</span>
+                      <span className="text-gray-100">ACESSE</span>
                       <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="37" cy="37" r="35.5" stroke="white" stroke-width="3"></circle>
                         <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="white"></path>
@@ -85,17 +85,13 @@ export default async function Home() {
                 <div class="min-h-screen flex flex-col justify-center items-center">
                   <div class=" sm:max-w-xl sm:mx-auto">
 
-                    <div class="relative text-gray-700 antialiased text-sm font-semibold">
-
-
+                    <div class="relative text-gray-900 dark:text-gray-100 antialiased text-sm font-semibold">
                       <div class="hidden sm:block w-1 bg-purple-300 absolute h-full left-1/2 transform -translate-x-1/2"></div>
-
-
                       <div class="mt-6 sm:mt-0 sm:mb-12">
                         <div class="flex flex-col sm:flex-row items-center">
                           <div class="flex justify-start w-full mx-auto items-center">
                             <div class="w-full sm:w-1/2 sm:pr-8">
-                              <div class="p-4 bg-white rounded shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)] text-center">
+                              <div class="p-4 bg-white dark:bg-slate-700 rounded shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)] text-center">
                                 <h3 class="font-semibold text-lg mb-1">Comunicação em Tempo Real</h3>
                                 <p class="leading-tight text-justify">
                                   Converse instantaneamente com representantes da Sanofi para
@@ -116,7 +112,7 @@ export default async function Home() {
                         <div class="flex flex-col sm:flex-row items-center">
                           <div class="flex justify-end w-full mx-auto items-center">
                             <div class="w-full sm:w-1/2 sm:pl-8">
-                              <div class="p-4 bg-white rounded shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)] text-center">
+                              <div class="p-4 bg-white dark:bg-slate-700 rounded shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)] text-center">
                                 <h3 class="font-semibold text-lg mb-1">Acesso a Informações Atualizadas</h3>
                                 <p class="leading-tight text-justify">
                                   Fique por dentro de produtos, tratamentos e estudos clínicos
@@ -136,7 +132,7 @@ export default async function Home() {
                         <div class="flex flex-col sm:flex-row items-center">
                           <div class="flex justify-start w-full mx-auto items-center">
                             <div class="w-full sm:w-1/2 sm:pr-8">
-                              <div class="p-4 bg-white rounded shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)] text-center">
+                              <div class="p-4 bg-white dark:bg-slate-700 rounded shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)] text-center">
                                 <h3 class="font-semibold text-lg mb-1 ">Uma plataforma simples e aconchegante</h3>
                                 <p class="leading-tight ">
                                   Tenha tudo em um click, seja no seu computador ou na palma da sua mão
@@ -159,7 +155,7 @@ export default async function Home() {
       </div>
 
 
-      <footer class="dark:bg-white  shadow bg-gray-900">
+      <footer class="bg-white  shadow dark:bg-gray-900">
         <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
           <div class="sm:flex sm:items-center sm:justify-between">
             <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0">

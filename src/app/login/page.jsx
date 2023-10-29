@@ -56,7 +56,7 @@ export default function Login() {
                         src={logo}
                         alt="Picture of the author"
                     />
-                    <h2 className="mt-8 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900 dark:text-white">
+                    <h2 className="mt-8 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100">
                         Faça login em sua conta
                     </h2>
                 </div>
@@ -64,7 +64,7 @@ export default function Login() {
                 <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-sm">
                     <form onSubmit={login} className="space-y-6">
                         <div>
-                            <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900 dark:text-white ">
+                            <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900 dark:text-gray-100 ">
                                 Email
                             </label>
                             <div className="mt-2">
@@ -72,7 +72,7 @@ export default function Login() {
                                     id="email"
                                     type="email"
                                     autoComplete="email"
-                                    className={`block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 ${credenciaisInvalidas ? "ring-red-500" : "" // Adicione um anel vermelho quando as credenciais forem inválidas
+                                    className={`block w-full dark:bg-gray-400 rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 sm:text-sm sm:leading-6 ${credenciaisInvalidas ? "ring-red-500" : "" // Adicione um anel vermelho quando as credenciais forem inválidas
                                         }`}
                                     value={credenciaisInvalidas ? "" : email} // Limpe o valor do campo se as credenciais forem inválidas
                                     onChange={(e) => {
@@ -85,7 +85,7 @@ export default function Login() {
 
                         <div>
                             <div className="flex items-center justify-between">
-                                <label htmlFor="senha" className="block text-sm font-medium leading-6 text-gray-900 dark:text-white">
+                                <label htmlFor="senha" className="block text-sm font-medium leading-6 text-gray-900 dark:text-gray-100">
                                     Senha
                                 </label>
 
@@ -96,7 +96,7 @@ export default function Login() {
                                     id="senha"
                                     type="password"
                                     autoComplete="current-password"
-                                    className={`block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 ${credenciaisInvalidas ? "ring-red-500" : ""
+                                    className={`block w-full dark:bg-gray-400 rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 sm:text-sm sm:leading-6 ${credenciaisInvalidas ? "ring-red-500" : ""
                                         }`}
                                     value={credenciaisInvalidas ? "" : senha}
                                     onChange={(e) => {
@@ -117,7 +117,7 @@ export default function Login() {
                         </div>
                     </form>
 
-                    <p className="mt-8 text-center text-sm text-gray-900 dark:text-white">
+                    <p className="mt-8 text-center text-sm text-gray-900 dark:text-gray-100">
                         Não faz parte ainda?{' '}
                         <a href="/cadastro" className="font-semibold leading-6 text-purple-700 hover:text-purple-800">
                             Cadastre-se agora!

@@ -87,7 +87,7 @@ export default function SignUp() {
                         src={logo}
                         alt="Picture of the author"
                     />
-                    <h2 className="mt-6 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900 dark:text-white">
+                    <h2 className="mt-6 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100">
                         Faça seu cadastro
                     </h2>
                 </div>

@@ -1,0 +1,48 @@
+{
+    "usuarios":[
+        {
+            "id":"1",
+            "nome": "Leonardo Bianor",
+            "email":"leobianor@outlook.com",
+            "senha":"1234"
+        },
+        {
+            "id":"2",
+            "nome": "Paula Machado",
+            "email":"paulamachado@outlook.com",
+            "senha":"4567"
+        }
+    ],
+    "produtos": [
+        {
+            "id": "1",
+            "nome": "Big Mac",
+            "imagePath": "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXCTbnv/200/200/original?country=br",
+            "preco": 26.90
+        },
+        {
+            "id": "2",
+            "nome": "Cheddar McMelt",
+            "imagePath": "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXv7hw4/200/200/original?country=br",
+            "preco": 27.90
+        },
+        {
+            "id": "3",
+            "nome": "Big Tasty",
+            "imagePath": "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kJX39JjK/200/200/original?country=br",
+            "preco": 40.90
+        },
+        {
+            "id": "4",
+            "nome": "McChicken",
+            "imagePath": "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kKXGzDAK/200/100/original?country=br",
+            "preco": 24.90
+        },
+        {
+            "id": "5",
+            "nome": "Quarterão com Queijo",
+            "imagePath": "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXNUCF7/200/200/original?country=br",
+            "preco": 27.90
+        }
+    ]
+}

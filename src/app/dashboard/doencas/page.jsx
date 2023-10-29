@@ -21,7 +21,7 @@ export default function Home() {
                 <div className="p-4 mt-14">
                     <a href="doencas/tromboelismo-venoso" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-md hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                         <Image
-                            class="bg-white px-2 py-2 object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                            class="bg-white dark:bg-gray-400 px-2 py-2 object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
                             src={TromboembolismoVenoso}
                             alt=""
                         />

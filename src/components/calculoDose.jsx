@@ -47,7 +47,7 @@ const MedicationCalculator = () => {
 
 
     return (
-        <div className="flex flex-col items-center bg-white rounded-xl px-8 py-6 text-gray-900 dark:text-white shadow-[4px_4px_15px_0px_rgba(122,0,234,0.50)]">
+        <div className="flex flex-col items-center bg-white dark:bg-gray-700 rounded-xl px-8 py-6 text-gray-900 dark:text-white shadow-[4px_4px_10px_0px_rgba(122,0,234,0.50)]">
 
             <div className={` ${isInsuficienciaRenalSelected ? 'bg-red-500' : 'bg-orange-500'} rounded-lg text-white `}>
                 <h1 className="text-lg text-center items-start font-medium px-14 mt-4">

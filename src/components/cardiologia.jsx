@@ -6,7 +6,7 @@ export default function Cardiologia() {
 
 
     return (
-        <div class="container mx-auto pt-4 text-gray-700">
+        <div class="container mx-auto pt-4 text-gray-900 dark:text-white">
             <div class="text-xl leading-7 text-justify px-4">
                 <div class="bg-red-600 rounded-xl py-2 px-6 mx-40">
                     <h2 class="text-lg font-medium text-center text-white">

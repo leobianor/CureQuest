@@ -46,9 +46,9 @@ export default function TratamentoTEV() {
         {
             title: "Pacientes com Baixo Peso e Obesos",
             content: (<div className="w-full h-full flex flex-col items-center justify-center">
-                <div className="w-full h-full object-cover">
+                <div className="w-full h-full object-cover px-4">
                     <h1 className="font-semibold text-purple-600 text-justify">Pacientes com baixo peso:{" "}
-                        <p className="font-normal text-gray-500">
+                        <p className="font-normal text-gray-900 dark:text-white">
                             Sem a necessidade de ajuste de dose, aconselha-se a monitorização clínica cuidadosa.<sup>1</sup>
                         </p>
                         <ul className="font-medium pl-2 mt-1">
@@ -57,15 +57,15 @@ export default function TratamentoTEV() {
                         </ul>
                     </h1>
                     <h1 className="font-semibold text-purple-600 mt-5 text-justify">Pacientes obesos:{" "}
-                        <p className="text-justify font-normal text-gray-500">
+                        <p className="text-justify font-normal text-gray-900 dark:text-white">
                             Pacientes obesos apresentam maior risco de tromboembolismo. Esses pacientes devem ser cuidadosamente observados para sinais e sintomas de tromboembolismo.<sup>1</sup>
                         </p>
                         <br />
-                        <p className=" font-normal text-gray-500 mt-2 px-8">
+                        <p className=" font-normal text-gray-900 dark:text-white mt-2 px-8">
                             GUÍAS ACCP 2012<sup>2-3</sup>: Um aumento na dose de drogas anticoagulantes poderia ser avaliado em relação à dose padrão em pacientes obesos submetidos à cirurgia bariátrica e em outras situações.
                         </p>
                     </h1>
-                    <ul className="text-gray-500 mt-20">
+                    <ul className="text-gray-900 dark:text-white mt-20">
                         <li>
                             <a href="https://www.anvisa.gov.br/datavisa/fila_bula/index.asp" target="_blank" className="text-blue-500">1.ANVISA- Bula Clexane</a>
                         </li>

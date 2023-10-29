@@ -6,7 +6,7 @@ export default function Oncologia() {
 
 
     return (
-        <div class="container mx-auto pt-4 text-gray-700">
+        <div class="container mx-auto pt-4 text-gray-900 dark:text-white">
             <h1 className="text-3xl text-center font-bold pb-2">Tratamento</h1>
             <div class="text-xl leading-7 text-justify px-4">
                 <p class="">
@@ -31,13 +31,13 @@ export default function Oncologia() {
                     </h2>
                 </div>
             </div>
-            <div class="my-6">
+            <div class="my-8">
                 <div class="">
-                    <h2 class="text-2xl font-semibold text-center ">
+                    <h2 class="text-3xl font-semibold text-center ">
                         Enoxaparina
                     </h2>
                 </div>
-                <h2 class="text-xl font-medium text-center text-gray-600 py-4">
+                <h2 class="text-2xl font-medium text-center py-10">
                     1 vez ao dia
                 </h2>
                 <div class="px-4 text-justify">

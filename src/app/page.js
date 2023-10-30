@@ -20,9 +20,9 @@ export default async function Home() {
               alt="Cure Quest Logo" />
             <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap text-gray-900 dark:text-gray-100 max-lg:text-sm">Cure Quest</span>
           </a>
-          <div class="flex md:order-2">
-            <a href="/login" type="button" class="text-white bg-purple-800 hover:bg-purple-600 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center  mr-3 md:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Login</a>
-            <a href="/cadastro" type="button" class="text-gray-900 dark:text-gray-100 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 ">Cadastrar</a>
+          <div class="flex md:order-2 gap-2">
+            <a href="/login" type="button" class="text-gray-100 bg-purple-800 hover:bg-purple-600 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center md:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Login</a>
+            <a href="/cadastro" type="button" class="text-gray-900 dark:text-gray-100 font-medium rounded-lg text-sm px-1 py-2 text-center md:mr-0 ">Cadastrar</a>
           </div>
 
         </div>
@@ -37,7 +37,7 @@ export default async function Home() {
       <div className=" justify-center items-center bg-gray-50 dark:bg-gray-800 flex flex-col self-stretch w-full px-4 max-lg:text-center pt-6">
         <div className="flex max-w-full flex-col self-center">
           <div className="items-center justify-center flex max-w-full flex-col h-screen min">
-            <div className="max-w-full">
+            <div className="max-w-full max-lg:px-6">
               <div className=" justify-center gap-10 flex max-md:flex-col ">
                 <div className="flex flex-col justify-center ">
                   <div className="justify-center max-xl:items-center items-start flex flex-col mt-12 max-md:max-w-full max-md:mt-12">
@@ -62,11 +62,6 @@ export default async function Home() {
                       </svg>
                     </a>
                   </div>
-
-
-
-
-
                 </div>
                 <div className="flex flex-col items-center justify-center leading-[normal] w-[30%] max-sm:hidden">
                   <Image
@@ -78,6 +73,7 @@ export default async function Home() {
               </div>
             </div>
           </div>
+
           <div className="items-center justify-center h-screen flex  flex-col max-md:max-w-full">
             <div className="flex max-w-full flex-row items-center justify-between gap-5 max-md:flex-wrap max-md:max-w-full">
               <div className="justify-center items-center flex flex-col self-center max-md:max-w-full">
@@ -163,7 +159,7 @@ export default async function Home() {
                 src={logo}
                 className="w-8 h-8 mr-3"
                 alt="Cure Quest Logo" />
-              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Cure Quest</span>
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-gray-100">Cure Quest</span>
             </a>
             <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
               <li>

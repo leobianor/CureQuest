@@ -25,10 +25,10 @@ export default function Home() {
                             Olá{" "}
                         </span>
                         <span className="font-bold text-purple-700">
-                            {userName}
+                            Doutor
                         </span>
                         <span>
-                            , seja bem-vindo!
+                            , seja muito bem-vindo!
                         </span>
                     </div>
                     <div className="flex items-start justify-start mb-4 ">

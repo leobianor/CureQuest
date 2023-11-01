@@ -1,4 +1,4 @@
-// File: C:\Users\leobi\CureQuest\src\app\cadastro\page.jsx
+// File: C:\Users\leobi\OneDrive - Fiap-Faculdade de Informática e Administração Paulista\CureQuest\src\app\cadastro\page.jsx
 import * as entry from '../../../../src/app/cadastro/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

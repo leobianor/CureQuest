@@ -6,34 +6,12 @@ import { useRouter } from "next/navigation";
 import 'flowbite';
 
 export default function Sidebar() {
-    const [darkMode, setDarkMode] = useState(false);
-    const [displayText, setDisplayText] = useState('Modo Claro');
 
-    // Function to toggle dark mode
-    const toggleDarkMode = () => {
-        setDarkMode(!darkMode);
-        localStorage.theme = darkMode ? 'light' : 'dark';
-        if (darkMode) {
-            document.documentElement.classList.remove('dark');
-        } else {
-            document.documentElement.classList.add('dark');
-        }
-        setDisplayText(darkMode ? 'Modo Claro' : 'Modo Noturno');
-    };
-
-    // Check for the user's theme preference on page load
-    useEffect(() => {
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            setDarkMode(true);
-            document.documentElement.classList.add('dark');
-            setDisplayText('Modo Claro');
-        }
-    }, []);
 
 
     function logout() {
         serverLogout();
-        push("/login");
+        window.location.href = "/login"
     }
 
 
@@ -76,17 +54,7 @@ export default function Sidebar() {
                         </a>
                     </li>
                 </ul>
-                <ul className="items-end">
-                    <li>
-                        <div className={`flex items-center justify-center p-2 text-gray-900 rounded-lg gap-2 ${darkMode ? 'dark:text-white' : ''} hover:bg-gray-100 ${darkMode ? 'dark:hover:bg-gray-700' : ''} group`}>
-                            <span className="flex-1 whitespace-nowrap">{displayText}</span>
-                            <label className="switch-container">
-                                <input type="checkbox" onChange={toggleDarkMode} checked={darkMode} />
-                                <span className="slider"></span>
-                            </label>
-                        </div>
-                    </li>
-                </ul>
+
             </div>
         </aside>
     )

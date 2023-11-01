@@ -10,6 +10,7 @@ import 'flowbite';
 
 
 export default function Home() {
+    const userName = 'Leonardo Bianor'
     //mock
     return (
         <>
@@ -24,10 +25,10 @@ export default function Home() {
                             Olá{" "}
                         </span>
                         <span className="font-bold text-purple-700">
-                            Dr. Fernandes
+                            {userName}
                         </span>
                         <span>
-                            , bem-vindo de novo!
+                            , seja bem-vindo!
                         </span>
                     </div>
                     <div className="flex items-start justify-start mb-4 ">

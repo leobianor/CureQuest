@@ -5,15 +5,11 @@ import { serverLogout } from "@/actions/auth";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import logo from "@/images/logo.png";
+import avatar from "@/images/avatar.png"
 import 'flowbite';
 
 export default function Navbar(users) {
-    const [darkMode, setDarkMode] = useState(false)
     const { push } = useRouter()
-
-    const toggleDarkMode = () => {
-        setDarkMode(!darkMode);
-    };
 
     function logout() {
         serverLogout()
@@ -47,7 +43,11 @@ export default function Navbar(users) {
                                 <button type="button" className="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
                                     <span className="sr-only">Open user menu</span>
                                     <div class="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                                        <span class="font-medium text-gray-600 dark:text-gray-300">DF</span>
+                                        <Image 
+                                        src={avatar} 
+                                        className="h-10"
+                                        
+                                        />
                                     </div>
                                 </button>
                             </div>
